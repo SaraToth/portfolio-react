@@ -1,6 +1,12 @@
+import Hero from "../components/Hero";
+import About from "../components/About";
+
 const Work = () => {
     return (
-        <p>this is work</p>
+        <>
+            <Hero/>
+            <About/>
+        </>
     )
 };
 

@@ -1,6 +1,16 @@
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Works from "../components/Works";
+import Contact from "../components/Contact";
+
 const Home = () => {
     return(
-        <p>this is home</p>
+        <>
+        <Hero/>
+        <About/>
+        <Works/>
+        <Contact/>
+        </>
     )
 };
 
