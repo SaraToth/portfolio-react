@@ -1,13 +1,13 @@
 import Hero from "../components/Hero";
 import About from "../components/About";
 
-const Work = () => {
+const Project = () => {
     return (
         <>
-            <Hero/>
-            <About/>
+            <Hero page="project" />
+            <About page="project" />
         </>
     )
 };
 
-export default Work;
+export default Project;
