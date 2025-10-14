@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 const Hero = () => {
+
     return(
         <section>
             <div className="container">
