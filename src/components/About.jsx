@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const About = ({page}) => {
+
+    const { t } = useTranslation();
 
     if (page === "home") {
         return(
@@ -7,8 +11,8 @@ const About = ({page}) => {
                     <h2>About Me</h2>
                     <div>
                         <div>
-                            <h3>Hello,</h3>
-                            <p>I'm a passionate Full Stack Developer building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+                            <h3>{t("home.about.h3")}</h3>
+                            <p>{t("home.about.content")}</p>
                         </div>
                         <div>
                             <h3>My Skills,</h3>
