@@ -16,28 +16,28 @@
     },
 
     "projects": {
-        "one": {
+        "1": {
             "id": 1,
             "name": "Wordbank",
             "brief": "Info about the project",
             "overview": "Detailed description",
             "tools": ["HTML", "CSS", "Javascript"]
         },
-        "two": {
+        "2": {
             "id": 2,
             "name": "Project Name",
             "brief": "Info about the project",
             "overview": "Detailed description",
             "tools": ["HTML", "CSS", "Javascript"]
         },
-        "three": {
+        "3": {
             "id": 3,
             "name": "Pokemon",
             "brief": "Info about the project",
             "overview": "Detailed description",
             "tools": ["HTML", "CSS", "Javascript"]
         },
-        "four": {
+        "4": {
             "id": 4,
             "name": "Portfolio",
             "brief": "Info about the project",
