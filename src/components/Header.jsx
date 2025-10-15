@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Header = ({isProjectPage}) => {
+    const {t, i18n} = useTranslation();
+
+    const switchLang = () => {
+        const nextLang = i18n.language === "en" ? "kr" : "en";
+        i18n.changeLanguage(nextLang);
+    };
 
     // Default pageVariant is Home
     const pageVariant = isProjectPage ? "/" : "";
@@ -34,8 +41,7 @@ const Header = ({isProjectPage}) => {
             {nav}
 
             {/* Right: Language button */}
-            <Link to="/" className="language" data-langauge="kr" >KR</Link>
-
+            <button className="language" onClick={switchLang}>{t("lang")}</button>
             {/* Far Right: Hamburger Menu */}
             <button aria-label="Menu" className="header__hamburger-open">&#9776;</button>
             <button className="header__hamburger-close">&#x2715;</button>
