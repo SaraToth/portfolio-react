@@ -5,6 +5,7 @@ import './globals.css'
 import App from './App.jsx'
 import Home from "./pages/Home.jsx"
 import Project from "./pages/Project.jsx"
+import "./i18n";
 
 
 const router = createBrowserRouter([
