@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import styles from "./Projects.module.css"
 
 const Projects = () => {
 
@@ -10,25 +11,27 @@ const Projects = () => {
 
     return(
         <section id="projects" className="home-projects">
-            <div className="container">
+            <div className={styles.container}>
                 <h2>Works</h2>
-                <div className="home-projects__container">
+                <div className={styles.projectContainer}>
 
                 {projectsArray.map((project) => (
-                    <div key={project.id} className="home-projects__project">
+                    <div key={project.id} className={styles.project}>
                         <img 
                             src={project.imgSrc || "null"}
                             alt="Project Image"
-                            width="300"
-                            height="300"
+                            width="600"
+                            height="400"
                             loading="lazy"
+                            className={styles.img}
                         />
-                        <div>
-                            <h3>{project.name}</h3>
+                        <div className={styles.content}>
                             <div>
-                                <p>{project.brief}</p>
+                                <h3>{project.name}</h3>
+                            <div><p>{project.brief}</p>
                             </div>
                             <Link to={`/projects/${project.id}`} className="btn-default">View {project.name}</Link>
+                            </div>
                         </div>
                     </div>
                 ))}
