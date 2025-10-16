@@ -1,12 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+
+    const { t } = useTranslation();
+    
     return (
         <section id="contact" className="home-contact">
             <div className="container">
                 <h2>Let's Work Together</h2>
                 <div className="content">
-                    <p>I'm currently open to new opportunities and interesting projects. Whether you want to discuss a potential collaboration or just say hello, I'd love to hear from you.</p>
+                    <p>{t("home.contact.content")}</p>
                 </div>
                 
                 {/* Toast Container */}
@@ -18,11 +22,11 @@ const Contact = () => {
                 <div>
                     <ul>
                         <li><Link 
-                            to="https://www.linkedin.com/in/saraatoth/"
+                            to={t("linkedIn")}
                             target="_blank"
                             rel="noopener noreferrer"
                             >
-                            <img 
+                            <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
                                 width="30"
                                 height="30"
@@ -31,7 +35,7 @@ const Contact = () => {
                             />
                         </Link></li>
                         <li><Link
-                            to="https://github.com/saratoth/"
+                            to={t("github")}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
