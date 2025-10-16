@@ -48,7 +48,7 @@ const Header = ({isProjectPage}) => {
 
             {/* Right: Language button and Hamburger menu */}
             <div className={styles.right}>
-                <select value={i18n.language} onChange={handleChange}>
+                <select value={i18n.language} onChange={handleChange} className={styles.select}>
                     <option value="en">EN</option>
                     <option value="kr">KR</option>
                 </select>

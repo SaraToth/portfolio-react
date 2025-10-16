@@ -1,7 +1,7 @@
 .header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--background-color);
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,7 @@
 .nav ul {
     display: none;
     gap: 2rem;
+    color: var(--heading-color);
 }
 
 /* Language toggle and hamburger menu */
@@ -29,6 +30,11 @@
     gap: 1rem;
     max-height: 1rem;
     align-items: center;
+}
+
+.select:hover {
+    background-color: black;
+    color: white;
 }
 
 /* Hamburger / Close button */
