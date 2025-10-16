@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-transform: uppercase;
 }
 
@@ -55,5 +56,9 @@
 @media (min-width: 800px) {
     .nav ul {
         display: flex;
+    }
+
+    .ham {
+        visibility: hidden;
     }
 }

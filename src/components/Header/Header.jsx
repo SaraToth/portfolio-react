@@ -6,15 +6,14 @@ import styles from "./Header.module.css";
 const Header = ({isProjectPage}) => {
 
     const [isDropdownOpen, setDropdownOpen] = useState(false);
-    const {t, i18n} = useTranslation();
+    const {i18n} = useTranslation();
 
     const toggleDropdown = () => {
         setDropdownOpen(!isDropdownOpen);
     };
 
-    const switchLang = () => {
-        const nextLang = i18n.language === "en" ? "kr" : "en";
-        i18n.changeLanguage(nextLang);
+    const handleChange = (e) => {
+        i18n.changeLanguage(e.target.value);
     };
 
     // Default pageVariant is Home
@@ -49,7 +48,10 @@ const Header = ({isProjectPage}) => {
 
             {/* Right: Language button and Hamburger menu */}
             <div className={styles.right}>
-                <button onClick={switchLang}>{t("lang")}</button>
+                <select value={i18n.language} onChange={handleChange}>
+                    <option value="en">EN</option>
+                    <option value="kr">KR</option>
+                </select>
 
                 {/* Hamburger open/close */}
                 <button onClick={toggleDropdown} className={styles.ham}>
