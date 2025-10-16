@@ -1,28 +1,37 @@
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
 const Projects = () => {
+
+    // Access projects data from localization files
+    const { t } = useTranslation();
+    const projects = t("projects", { returnObjects: true });
+    const projectsArray = Object.values(projects);
+
     return(
         <section id="projects" className="home-projects">
             <div className="container">
                 <h2>Works</h2>
-                <div className="projects__container">
+                <div className="home-projects__container">
 
-                {/* Individual projects create dynamiclly through iteration */}
-                    <div className="projects__project">
+                {projectsArray.map((project) => (
+                    <div key={project.id} className="home-projects__project">
                         <img 
-                            src="null"
+                            src={project.imgSrc || "null"}
                             alt="Project Image"
                             width="300"
                             height="300"
                             loading="lazy"
-                            className="home-projects__img"
                         />
-                        <div className="home-projects__content-container">
-                            <h3>Project Name</h3>
+                        <div>
+                            <h3>{project.name}</h3>
                             <div>
-                                <p>Project Description</p>
+                                <p>{project.brief}</p>
                             </div>
-                            <a href="./project-${projectNumber}" className="btn-link" alt="">View Project Name</a>
+                            <Link to={`/projects/${project.id}`}>View {project.name}</Link>
                         </div>
                     </div>
+                ))}
                 </div>
             </div>
         </section>
