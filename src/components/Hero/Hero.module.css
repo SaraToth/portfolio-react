@@ -1,0 +1,12 @@
+.homeHero {
+    margin-block: 7rem;
+}
+
+.heroContainer {
+    text-align: center;
+}
+
+.homeContent {
+    padding-left: var(--padding-horizontal-section);
+    padding-right: var(--padding-horizontal-section);
+}

@@ -21,7 +21,7 @@ const Contact = () => {
         <section id="contact" className="home-contact">
             <div className={styles.container}>
                 <h2>Let's Work Together</h2>
-                <div className="content">
+                <div className={styles.content}>
                     <p>{t("home.contact.content")}</p>
                 </div>
                 

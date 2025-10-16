@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import styles from "./Hero.module.css";
 
 const Hero = ({page}) => {
 
@@ -9,12 +10,12 @@ const Hero = ({page}) => {
 
     if (page === "home") {
         return (
-            <section id="hero" className="home-hero">
-                <div className="container">
+            <section id="hero" className={styles.homeHero}>
+                <div className={styles.heroContainer}>
                     <h1>{t("home.hero.h1")}</h1>
                     <h2>{t("home.hero.h2")}</h2>
-                    <div className="content">
-                        <p>{t("home.hero.content")}</p>
+                    <div>
+                        <p className={styles.homeContent}>{t("home.hero.content")}</p>
                     </div>
                     <Link to="/#works" className="btn-default">Work</Link>
                 </div>
