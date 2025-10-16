@@ -16,15 +16,28 @@ const Header = ({isProjectPage}) => {
         i18n.changeLanguage(e.target.value);
     };
 
+    const scrollToSection = (id, offset=100) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+        });
+    };
+
     // Default pageVariant is Home
     const pageVariant = isProjectPage ? "/" : "";
 
     // Default for Home
     const headerLinks = [
-        { link: "#", text: "Home" },
-        { link: "#about", text: "About" },
-        { link: "#projects", text: "Work" },
-        { link: "#contact", text: "Contact" }
+        { link: "#", text: "Home", id: "hero" },
+        { link: "#about", text: "About", id: "about" },
+        { link: "#projects", text: "Work", id: "projects" },
+        { link: "#contact", text: "Contact", id: "contact" }
     ];
 
     // Update nav links per page
@@ -33,7 +46,7 @@ const Header = ({isProjectPage}) => {
             <ul>
                 {headerLinks.map((link) => (
                     // Need a forward slash
-                    <li key={link.text}><Link to={ pageVariant + link.link}>{link.text}</Link></li>
+                    <li key={link.text}><Link to={ pageVariant + link.link} onClick={() => scrollToSection(link.id)}>{link.text}</Link></li>
                 ))}
             </ul>
         </nav>
@@ -61,10 +74,10 @@ const Header = ({isProjectPage}) => {
                 {/* Dropdown menu */}
                 {isDropdownOpen && (
                     <div className={styles.dropdownContainer}>
-                        <Link to="/#">Home</Link>
-                        <Link to="/#about" >About</Link>
-                        <Link to="/#works" >Works</Link>
-                        <Link to="/#contact" >Contact</Link>
+                        <Link to="/#" onClick={() => scrollToSection("hero")}>Home</Link>
+                        <Link to="/#about" onClick={() => scrollToSection("about")} >About</Link>
+                        <Link to="/#works" onClick={() => scrollToSection("projects")}>Works</Link>
+                        <Link to="/#contact" onClick={() => scrollToSection("contact")}>Contact</Link>
                     </div>
                 )}
             </div>
