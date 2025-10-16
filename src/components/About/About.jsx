@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
+import styles from "./About.module.css";
 
 const About = ({page}) => {
 
@@ -10,19 +11,20 @@ const About = ({page}) => {
         const toolsArray = t("home.about.tools", { returnObjects: true });
 
         return(
-            <section id="about" className="home-about">
-                <div className="container">
+            <section id="about" className={styles.homeSection}>
+                <div className={styles.homeContainer}>
                     <h2>About Me</h2>
-                    <div>
-                        <div>
-                            <h3>{t("home.about.h3")}</h3>
+                    <div className={styles.homeContent}>
+                        <div className={styles.aboutContent}>
+                            <h3 className={styles.greeting}>{t("home.about.h3")}</h3>
                             <p>{t("home.about.content")}</p>
+                            <Link to="/#projects" className="btn-default">Projects</Link>
                         </div>
                         <div>
-                            <h3>My Skills,</h3>
-                            <div>
+                            <h3 className={styles.skillsH3}>My Skills</h3>
+                            <div className={styles.skillsContainer}>
                             {toolsArray.map((tool) => (
-                                <div key={tool} className="tool">{tool}</div>
+                                <div key={tool} className={styles.tool}>{tool}</div>
                             ))}
                             </div>
                         </div>
@@ -34,8 +36,8 @@ const About = ({page}) => {
         const project = t(`projects.${projectId}`, { returnObjects: true });
 
         return(
-            <section id="about" className="project-about">
-                <div className="container">
+            <section id="about" className={styles.projectSection}>
+                <div className={styles.container}>
                     <img 
                         src={project.imgSrc || "null"}
                         alt="Project Image"

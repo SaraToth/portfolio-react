@@ -1,0 +1,44 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+}
+
+/* "Hello," h3 */
+.greeting {
+    text-align: left;
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tool {
+    background-color: var(--skill-bgd-color);
+    color: var(--skill-font-color);
+    font-size: var(--text-small);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+}
+@media (min-width: 800px) {
+    .homeContent {
+        flex-direction: row;
+    }
+
+    .aboutContent {
+        max-width: 50%;
+        padding-right: var(--padding-horizontal);
+    }
+
+    .skillsH3 {
+        text-align: left;
+    }
+}
