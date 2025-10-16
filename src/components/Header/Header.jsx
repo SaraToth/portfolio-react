@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import styles from "./Header.module.css";
 
 const Header = ({isProjectPage}) => {
     const {t, i18n} = useTranslation();
@@ -22,7 +23,7 @@ const Header = ({isProjectPage}) => {
 
     // Update nav links per page
     const nav = (
-        <nav>
+        <nav className={styles.nav}>
             <ul>
                 {headerLinks.map((link) => (
                     // Need a forward slash
@@ -33,25 +34,28 @@ const Header = ({isProjectPage}) => {
     );
 
     return (
-        <header>
+        <header className={styles.header}>
             {/* Left: Logo */}
-            <Link to="/">Sara Toth</Link>
+            <Link to="/" className={styles.left}>Sara Toth</Link>
 
             {/* Center: Navigation Links */}
             {nav}
 
-            {/* Right: Language button */}
-            <button className="language" onClick={switchLang}>{t("lang")}</button>
-            {/* Far Right: Hamburger Menu */}
-            <button aria-label="Menu" className="header__hamburger-open">&#9776;</button>
-            <button className="header__hamburger-close">&#x2715;</button>
+            {/* Right: Language button and Hamburger menu */}
+            <div className={styles.right}>
+                <button onClick={switchLang}>{t("lang")}</button>
 
-            {/* Dropdown menu that appears on small screens */}
-            <div>
-                <Link to="/#">Home</Link>
-                <Link to="/#about" >About</Link>
-                <Link to="/#works" >Works</Link>
-                <Link to="/#contact" >Contact</Link>
+                {/* Hamburger open/close */}
+                <button aria-label="Menu" className={styles.hamOpen}>&#9776;</button>
+                <button className={styles.hamClose}>&#x2715;</button>
+
+                {/* Dropdown menu */}
+                <div className={styles.dropdownContainer}>
+                    <Link to="/#">Home</Link>
+                    <Link to="/#about" >About</Link>
+                    <Link to="/#works" >Works</Link>
+                    <Link to="/#contact" >Contact</Link>
+                </div>
             </div>
 
         </header>

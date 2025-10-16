@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    display: none;
+    gap: 2rem;
+}
+
+.left {
+    color: var(--heading-color);
+    font-weight: var(--super-bold);
+}
+
+.right {
+    display: flex;
+    gap: 1rem;
+}
+
+.hamOpen, .hamClose {
+    border: none;
+}
+
+.hamClose, .dropdownContainer {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .hamOpen {
+        display: none;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+}
