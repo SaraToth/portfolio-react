@@ -70,6 +70,41 @@ body {
 }
 
 /* ==============================
+   TYPOGRAPHY
+============================== */
+
+/* ---------- Base Text ---------- */
+
+body {
+    font-size: var(--text-medium);
+    color: var(--text-color);
+    line-height: 1.5;
+    font-family: 'Geist', sans-serif;
+}
+
+/* ---------- Headings ---------- */
+
+h1, h2, h3 {
+    font-weight: var(--super-bold);
+    color: var(--heading-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 { font-size: var(--h1-font-size) }
+h2 { font-size: var(--h2-font-size) }
+h3 { font-size: var(--h3-font-size) }
+
+h1 { margin-bottom: 1.5rem }
+h2 { margin-bottom: 1rem }
+h3 {
+    font-weight: var(--bold);
+    text-transform: unset;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* ==============================
    LAYOUT
 ============================== */
 
