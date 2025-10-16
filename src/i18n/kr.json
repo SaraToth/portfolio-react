@@ -21,28 +21,40 @@
             "name": "Wordbank - 제목",
             "brief": "정보",
             "overview": "더 길게 설명하는 것",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         },
         "2": {
             "id": 2,
             "name": "Project Name - 제목",
             "brief": "정보",
             "overview": "더 길게 설명하는 것",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         },
         "3": {
             "id": 3,
             "name": "Pokemon - 제목",
             "brief": "정보",
             "overview": "더 길게 설명하는 것",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         },
         "4": {
             "id": 4,
             "name": "Portfolio -제목",
             "brief": "정보",
             "overview": "더 길게 설명하는 것",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         }
     }
 }

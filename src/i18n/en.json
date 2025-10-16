@@ -21,28 +21,40 @@
             "name": "Wordbank",
             "brief": "Info about the project",
             "overview": "Detailed description",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         },
         "2": {
             "id": 2,
             "name": "Project Name",
             "brief": "Info about the project",
             "overview": "Detailed description",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         },
         "3": {
             "id": 3,
             "name": "Pokemon",
             "brief": "Info about the project",
             "overview": "Detailed description",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         },
         "4": {
             "id": 4,
             "name": "Portfolio",
             "brief": "Info about the project",
             "overview": "Detailed description",
-            "tools": ["HTML", "CSS", "Javascript"]
+            "tools": ["HTML", "CSS", "Javascript"],
+            "imgSrc": "",
+            "liveLink": "",
+            "codeLink": ""
         }
     }
 }
