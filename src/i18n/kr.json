@@ -10,7 +10,8 @@
         },
         "about": {
             "h3": "안녕하세요,",
-            "content": "아직 못 썼어요."
+            "content": "아직 못 썼어요.",
+                        "tools": ["HTML", "CSS", "Javascript", "React", "Git", "Github", "Node.js", "Express", "Typescript", "SQL", "PostgreSQL", "Prisma", "Webpack", "Jest", "Responsive Design", "Accesibility (a11y)", "Rest API", "CRUD App", "Deployment", "i18n"]
         },
         "contact": {
             "content": "쥐직중"

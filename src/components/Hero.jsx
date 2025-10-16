@@ -16,7 +16,7 @@ const Hero = ({page}) => {
                     <div className="content">
                         <p>{t("home.hero.content")}</p>
                     </div>
-                    <Link to="/#works" >Works</Link>
+                    <Link to="/#works" >Work</Link>
                 </div>
             </section>
         )
@@ -29,7 +29,11 @@ const Hero = ({page}) => {
                     <h1>{project.name}</h1>
                     <div className="content">
                         <p>{project.brief}</p>
-                        <Link to="Live Link" target="_blank" rel="noopener noreferrer">Live Link</Link>
+                        <Link 
+                            to={project.liveLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >Live</Link>
                     </div>
                 </div>
             </section>

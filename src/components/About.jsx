@@ -7,6 +7,8 @@ const About = ({page}) => {
     const { t } = useTranslation();
 
     if (page === "home") {
+        const toolsArray = t("home.about.tools", { returnObjects: true });
+
         return(
             <section id="about" className="home-about">
                 <div className="container">
@@ -19,24 +21,9 @@ const About = ({page}) => {
                         <div>
                             <h3>My Skills,</h3>
                             <div>
-                                <div>HTML</div>
-                                <div>CSS</div>
-                                <div>Javascript</div>
-                                <div>React</div>
-                                <div>Git</div>
-                                <div>Github</div>
-                                <div>Node.js</div>
-                                <div>Express.js</div>
-                                <div>Typescript</div>
-                                <div>SQL</div>
-                                <div>PostgreSQL</div>
-                                <div>Prisma</div>
-                                <div>Webpack</div>
-                                <div>Jest</div>
-                                <div>Responsive Design</div>
-                                <div>Accesibility (a11y)</div>
-                                <div>REST API</div>
-                                <div>Deployment</div>
+                            {toolsArray.map((tool) => (
+                                <div key={tool}>{tool}</div>
+                            ))}
                             </div>
                         </div>
                     </div>

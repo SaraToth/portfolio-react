@@ -2,6 +2,7 @@
     "lang": "en",
     "github": "https://github.com/saratoth/",
     "linkedIn": "https://www.linkedin.com/in/saraatoth/",
+
     "home": {
         "hero": {
             "h1": "Sara Toth",
@@ -10,7 +11,8 @@
         },
         "about": {
             "h3": "Hello,",
-            "content": "I'm a passionate Full Stack Developer building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section."
+            "content": "I'm a passionate Full Stack Developer building and managing the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.",
+            "tools": ["HTML", "CSS", "Javascript", "React", "Git", "Github", "Node.js", "Express", "Typescript", "SQL", "PostgreSQL", "Prisma", "Webpack", "Jest", "Responsive Design", "Accesibility (a11y)", "Rest API", "CRUD App", "Deployment", "i18n"]
         },
         "contact": {
             "content": "I'm currently open to new opportunities and interesting projects. Whether you want to discuss a potential collaboration or just say hello, I'd love to hear from you."
