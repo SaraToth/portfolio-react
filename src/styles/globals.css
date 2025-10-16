@@ -1,0 +1,103 @@
+/* ==============================
+   Variables
+============================== */
+:root {
+/* Font Weight */
+    --super-bold: 900;
+    --bold: 700;
+
+    /* Heading Size */
+    /* --h1-font-size: 3rem; */
+    --h1-font-size: clamp(3rem, 4vw + 1rem, 5rem);
+    --h2-font-size: clamp(1.875rem, 2.5vw + 0.5rem, 3.5rem);
+    --h3-font-size: clamp(1.5rem, 2vw + 0.25rem, 2.5rem);
+
+    /* Text Size */
+    --text-small:  clamp(0.875rem, 2vw + 0.25rem, 1.3rem);
+    --text-medium: clamp(1rem,     2vw + 0.35rem, 1.2rem);
+    --text-large:  clamp(1.125rem, 2vw + 0.45rem, 2rem);
+
+    /* Colors */
+    --background-color: oklch(.98 .002 264);
+    --heading-color: oklch(0.2 0.01 264);
+    --text-color: oklch(0.5 0.01 264);
+    --skill-bgd-color: rgba(153, 153, 153, 0.2);
+    --skill-font-color: oklch(0.2 0.01 264);
+    --border-color: oklch(0.9 0.005 264);
+
+    /* Color Options */
+    --color1: oklch(53.938% 0.11127 300.232);
+    --color2: oklch(0.45 .15 290);
+    --color3: oklch(0.65 0.15 240);
+    --color4: oklch(0.54 0.10 240);
+
+    /* Current Button Color */
+    --btn-background: black;
+
+    /* Additional */
+    --button-letter-spacing: 2px;
+    --gap: 0.5rem;
+    --border-radius: 0.5rem;
+}
+
+/* ==============================
+   DEFAULTS / RESET
+============================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: var(--background-color);
+}
+
+/* ==============================
+   LAYOUT
+============================== */
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.btn-default {
+    font-size: var(--text-small);
+    font-weight: var(--bold);
+    background-color: var(--btn-background);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: var(--button-letter-spacing);
+    border-radius: var(--border-radius);
+    border-width: 0;
+    padding: 1rem 2rem;
+    display: inline-block;
+}
+
+/* ==============================
+   TOOLS
+============================== */
+
+/* .tool {
+    background-color: var(--skill-bgd-color);
+    color: var(--skill-font-color);
+    font-size: var(--text-small);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+} */

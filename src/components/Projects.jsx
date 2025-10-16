@@ -28,7 +28,7 @@ const Projects = () => {
                             <div>
                                 <p>{project.brief}</p>
                             </div>
-                            <Link to={`/projects/${project.id}`}>View {project.name}</Link>
+                            <Link to={`/projects/${project.id}`} className="btn-default">View {project.name}</Link>
                         </div>
                     </div>
                 ))}

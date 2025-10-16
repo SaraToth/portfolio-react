@@ -22,7 +22,7 @@ const About = ({page}) => {
                             <h3>My Skills,</h3>
                             <div>
                             {toolsArray.map((tool) => (
-                                <div key={tool}>{tool}</div>
+                                <div key={tool} className="tool">{tool}</div>
                             ))}
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const About = ({page}) => {
                     <h3>Tools Used</h3>
                     <div>
                         {project.tools.map((tool) => (
-                            <div key={tool}>{tool}</div>
+                            <div key={tool} className="tool">{tool}</div>
                         ))}
                     </div>
                     <h3>See Live</h3>
@@ -58,11 +58,13 @@ const About = ({page}) => {
                             to={project.liveLink}
                             target="_blank" 
                             rel="noopener noreferrer"
+                            className="btn-default"
                         >Live Link</Link>
                         <Link
                             to={project.codeLink}
                             target="_blank" 
                             rel="noopener noreferrer"
+                            className="btn-default"
                         >Code Link</Link>
                     </div>
                 </div>

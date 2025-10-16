@@ -17,7 +17,7 @@ const Contact = () => {
                 <div id="toast" className="toast">Copied email to clipboard!</div>
 
                 {/* Contact Button - Toast activator */}
-                <button>Contact</button>
+                <button className="btn-default">Contact</button>
 
                 <div>
                     <ul>

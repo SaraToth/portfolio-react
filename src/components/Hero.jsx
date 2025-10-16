@@ -16,7 +16,7 @@ const Hero = ({page}) => {
                     <div className="content">
                         <p>{t("home.hero.content")}</p>
                     </div>
-                    <Link to="/#works" >Work</Link>
+                    <Link to="/#works" className="btn-default">Work</Link>
                 </div>
             </section>
         )
@@ -33,6 +33,7 @@ const Hero = ({page}) => {
                             to={project.liveLink} 
                             target="_blank" 
                             rel="noopener noreferrer"
+                            className="btn-default"
                         >Live</Link>
                     </div>
                 </div>
