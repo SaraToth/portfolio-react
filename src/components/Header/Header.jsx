@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./Header.module.css";
 
 const Header = ({isProjectPage}) => {
+
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
     const {t, i18n} = useTranslation();
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!isDropdownOpen);
+    };
 
     const switchLang = () => {
         const nextLang = i18n.language === "en" ? "kr" : "en";
@@ -38,7 +45,6 @@ const Header = ({isProjectPage}) => {
             {/* Left: Logo */}
             <Link to="/" className={styles.left}>Sara Toth</Link>
 
-            {/* Center: Navigation Links */}
             {nav}
 
             {/* Right: Language button and Hamburger menu */}
@@ -46,16 +52,19 @@ const Header = ({isProjectPage}) => {
                 <button onClick={switchLang}>{t("lang")}</button>
 
                 {/* Hamburger open/close */}
-                <button aria-label="Menu" className={styles.hamOpen}>&#9776;</button>
-                <button className={styles.hamClose}>&#x2715;</button>
+                <button onClick={toggleDropdown} className={styles.ham}>
+                    {isDropdownOpen ? "✕" : "☰"}
+                </button>
 
                 {/* Dropdown menu */}
-                <div className={styles.dropdownContainer}>
-                    <Link to="/#">Home</Link>
-                    <Link to="/#about" >About</Link>
-                    <Link to="/#works" >Works</Link>
-                    <Link to="/#contact" >Contact</Link>
-                </div>
+                {isDropdownOpen && (
+                    <div className={styles.dropdownContainer}>
+                        <Link to="/#">Home</Link>
+                        <Link to="/#about" >About</Link>
+                        <Link to="/#works" >Works</Link>
+                        <Link to="/#contact" >Contact</Link>
+                    </div>
+                )}
             </div>
 
         </header>
