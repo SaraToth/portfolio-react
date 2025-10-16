@@ -24,7 +24,7 @@
         "1": {
             "id": 1,
             "name": "Wordbank",
-            "brief": "This is some info about the wordbank api which i made all by myself oh yea",
+            "brief": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos natus, voluptas laudantium placeat ullam officiis minima quos commodi,   ",
             "overview": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sunt possimus omnis cupiditate adipisci ducimus necessitatibus iusto, labore porro hic odit doloremque cum tenetur aut quidem accusantium ipsa minus consectetur!",
             "tools": ["HTML", "CSS", "Javascript"],
             "imgSrc": "",
@@ -34,7 +34,7 @@
         "2": {
             "id": 2,
             "name": "Project Name",
-            "brief": "Info about the project",
+            "brief": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos natus, voluptas laudantium placeat ullam officiis minima quos commodi,   ",
             "overview": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sunt possimus omnis cupiditate adipisci ducimus necessitatibus iusto, labore porro hic odit doloremque cum tenetur aut quidem accusantium ipsa minus consectetur!",
             "tools": ["HTML", "CSS", "Javascript"],
             "imgSrc": "",
@@ -44,7 +44,7 @@
         "3": {
             "id": 3,
             "name": "Pokemon",
-            "brief": "Yea so i made this cool card thingy with pokemons in it",
+            "brief": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos natus, voluptas laudantium placeat ullam officiis minima quos commodi,   ",
             "overview": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sunt possimus omnis cupiditate adipisci ducimus necessitatibus iusto, labore porro hic odit doloremque cum tenetur aut quidem accusantium ipsa minus consectetur!",
             "tools": ["HTML", "CSS", "Javascript"],
             "imgSrc": "",
@@ -54,7 +54,7 @@
         "4": {
             "id": 4,
             "name": "Portfolio",
-            "brief": "Info about the project",
+            "brief": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos natus, voluptas laudantium placeat ullam officiis minima quos commodi,   ",
             "overview": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sunt possimus omnis cupiditate adipisci ducimus necessitatibus iusto, labore porro hic odit doloremque cum tenetur aut quidem accusantium ipsa minus consectetur!",
             "tools": ["HTML", "CSS", "Javascript"],
             "imgSrc": "",

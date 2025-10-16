@@ -8,13 +8,12 @@
 .project {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     align-items: center;
     text-align: center;
-
-    width: min(90%, 1000px);
+    width: min(100%, 1000px);
     margin-inline: auto;
 }
+
 
 
 .img {
@@ -31,5 +30,14 @@
 @media (min-width: 800px) {
     .project {
         flex-direction: row;
+        text-align: left;
+    }
+
+    .project h3 {
+        text-align: left;
+    }
+
+    .content {
+        padding-left: 5rem;
     }
 }
