@@ -1,3 +1,11 @@
+.homeSection h2 {
+    text-decoration-line:underline;
+    text-decoration-color: var(--heading-color);
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 2px;
+    padding-bottom: 1rem;
+}
+
 .homeContainer {
     display: flex;
     flex-direction: column;
