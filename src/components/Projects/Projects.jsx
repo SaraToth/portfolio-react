@@ -10,7 +10,7 @@ const Projects = () => {
     const projectsArray = Object.values(projects);
 
     return(
-        <section id="projects" className="home-projects">
+        <section id="projects" className={styles.projectsSection}>
             <div className={styles.container}>
                 <h2>Works</h2>
                 <div className={styles.projectContainer}>

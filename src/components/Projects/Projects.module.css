@@ -1,3 +1,15 @@
+.projectsSection {
+    margin-top: 7rem;
+}
+
+.projectsSection h2 {
+    margin-bottom: 5rem;
+    text-decoration-line:underline;
+    text-decoration-color: var(--heading-color);
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 2px;
+}
+
 .projectContainer {
     display: flex;
     flex-direction: column;
