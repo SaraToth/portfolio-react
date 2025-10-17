@@ -38,3 +38,9 @@
     z-index: 1000;
     font-size: var(--text-small);
 }
+
+@media (min-width: 800px) {
+    .contactSection {
+        margin-block: 10rem;
+    }
+}

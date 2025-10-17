@@ -10,3 +10,9 @@
     padding-left: var(--padding-horizontal-section);
     padding-right: var(--padding-horizontal-section);
 }
+
+@media (min-width: 800px) {
+    .homeHero {
+        margin-block: 10rem;
+    }
+}
