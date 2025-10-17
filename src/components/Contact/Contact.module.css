@@ -1,3 +1,7 @@
+.contactSection {
+    margin-block: 7rem;
+}
+
 .container {
     text-align: center;
 }
@@ -5,6 +9,10 @@
 .content {
     padding-left: var(--padding-horizontal-section);
     padding-right: var(--padding-horizontal-section);
+}
+
+.socials {
+    padding-top: 1rem;
 }
 
 .socials ul {
