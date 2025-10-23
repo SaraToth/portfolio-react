@@ -36,6 +36,23 @@
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
 }
+
+.img {
+    max-width: 100%;
+    max-height: auto;
+    background-color: gray;
+    min-width: 50%;
+}
+.projectLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.projH3 {
+    text-align: left;
+}
+
+
 @media (min-width: 800px) {
     .homeContent {
         flex-direction: row;

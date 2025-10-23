@@ -57,18 +57,19 @@ const About = ({page}) => {
                         width="300"
                         height="300"
                         loading="lazy"
+                        className={styles.img}
                     />
                     <h2>Project Overview</h2>
                     <div>
                         <p>{project.overview}</p></div>
-                    <h3>Tools Used</h3>
-                    <div>
+                    <h3 className={styles.projH3}>Tools Used</h3>
+                    <div className={styles.skillsContainer}>
                         {project.tools.map((tool) => (
-                            <div key={tool} className="tool">{tool}</div>
+                            <div key={tool} className={styles.tool}>{tool}</div>
                         ))}
                     </div>
-                    <h3>See Live</h3>
-                    <div>
+                    <h3 className={styles.projH3}>See Live</h3>
+                    <div className={styles.projectLinks}>
                         <Link 
                             to={project.liveLink}
                             target="_blank" 
