@@ -20,7 +20,7 @@ const Projects = () => {
                         <img 
                             src={project.imgSrc || "null"}
                             alt="Project Image"
-                            width="600"
+                            width="300"
                             height="400"
                             loading="lazy"
                             className={styles.img}
