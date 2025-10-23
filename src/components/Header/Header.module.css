@@ -17,11 +17,19 @@
     font-weight: var(--super-bold);
 }
 
+.left:hover {
+    color: var(--color2);
+}
+
 /* Desktop menu */
 .nav ul {
     display: none;
     gap: 2rem;
     color: var(--heading-color);
+}
+
+.nav li:hover {
+    color: var(--color2);
 }
 
 /* Language toggle and hamburger menu */
@@ -42,6 +50,7 @@
 
 .select:hover {
     cursor: pointer;
+    color: var(--color2);
 }
 
 

@@ -31,7 +31,7 @@
     --color4: oklch(0.54 0.10 240);
 
     /* Current Button Color */
-    --btn-background: black;
+    --btn-background: var(--color2);
 
     /* Additional */
     --button-letter-spacing: 2px;
