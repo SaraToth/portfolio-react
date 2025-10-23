@@ -7,6 +7,19 @@ const About = ({page}) => {
     const { projectId } = useParams();
     const { t } = useTranslation();
 
+    const scrollToSection = (id, offset=100) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+        });
+    };
+
     if (page === "home") {
         const toolsArray = t("home.about.tools", { returnObjects: true });
 
@@ -18,7 +31,7 @@ const About = ({page}) => {
                         <div className={styles.aboutContent}>
                             <h3 className={styles.greeting}>{t("home.about.h3")}</h3>
                             <p>{t("home.about.content")}</p>
-                            <Link to="/#projects" className="btn-default">Projects</Link>
+                            <Link to="#contact" onClick={() => scrollToSection("contact")} className="btn-default">Contact</Link>
                         </div>
                         <div>
                             <h3 className={styles.skillsH3}>My Skills</h3>

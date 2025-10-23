@@ -8,6 +8,19 @@ const Hero = ({page}) => {
     const { projectId } = useParams();
     const { t } = useTranslation();
 
+    const scrollToSection = (id, offset=100) => {
+        const element = document.getElementById(id);
+        if (!element) return;
+
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+        });
+    };
+
     if (page === "home") {
         return (
             <section id="hero" className={styles.homeHero}>
@@ -17,7 +30,7 @@ const Hero = ({page}) => {
                     <div>
                         <p className={styles.homeContent}>{t("home.hero.content")}</p>
                     </div>
-                    <Link to="/#works" className="btn-default">Work</Link>
+                    <Link to="#works" onClick={() => scrollToSection("projects")} className="btn-default">Work</Link>
                 </div>
             </section>
         )
