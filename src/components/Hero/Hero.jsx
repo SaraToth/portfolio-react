@@ -38,8 +38,8 @@ const Hero = ({page}) => {
         const project = t(`projects.${projectId}`, { returnObjects: true });
 
         return(
-            <section id="hero" className="project-hero">
-                <div className="container">
+            <section id="hero" className={styles.projHero}>
+                <div className={styles.heroContainer}>
                     <h1>{project.name}</h1>
                     <div className="content">
                         <p>{project.brief}</p>
