@@ -31,7 +31,7 @@ const Contact = () => {
                 )}
 
                 {/* Contact Button - Toast activator */}
-                <button className="btn-default" onClick={handleToast}>Contact</button>
+                <button className={`btn-default ${styles.contact}`} onClick={handleToast}>Contact</button>
 
                 <div className={styles.socials}>
                     <ul>

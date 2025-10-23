@@ -11,6 +11,11 @@
     padding-right: var(--padding-horizontal-section);
 }
 
+/* Contact btn */
+.contact {
+    cursor: pointer;
+}
+
 .socials {
     padding-top: 1rem;
 }
