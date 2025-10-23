@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    padding-block: clamp(0.5rem, 2vw, 5rem);
+    padding-block: clamp(0.5rem, 1vw + 0.5rem, 2.5rem);
     border-bottom: 1px solid gray;
 }
 
@@ -32,10 +32,18 @@
     align-items: center;
 }
 
-.select:hover {
-    background-color: black;
-    color: white;
+.select, .ham {
+    --webkit-appearance: none;
+    appearance: none;
+    color: inherit;
+    background: none;
+    border: none;
 }
+
+.select:hover {
+    cursor: pointer;
+}
+
 
 /* Hamburger / Close button */
 .ham {
