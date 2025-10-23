@@ -67,12 +67,27 @@
     background-color: var(--background-color);
     position: absolute;
     top: 100%;
-    right: 0;
-    border: 1px solid red;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 0px;
     display: flex;
     flex-direction: column;
+    text-align: right;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(238, 238, 238);
 }
 
+.dropLink {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 1rem;
+    padding-right: var(--padding-horizontal);
+}
+
+.lastLink {
+    padding-bottom: 1rem;
+    padding-right: var(--padding-horizontal);
+}
 
 
 @media (min-width: 800px) {

@@ -23,6 +23,7 @@ const Header = ({isProjectPage}) => {
         const elementPosition = element.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - offset;
 
+        setDropdownOpen(false)
         window.scrollTo({
             top: offsetPosition,
             behavior: "smooth",
@@ -74,10 +75,10 @@ const Header = ({isProjectPage}) => {
                 {/* Dropdown menu */}
                 {isDropdownOpen && (
                     <div className={styles.dropdownContainer}>
-                        <Link to="/#" onClick={() => scrollToSection("hero")}>Home</Link>
-                        <Link to="/#about" onClick={() => scrollToSection("about")} >About</Link>
-                        <Link to="/#works" onClick={() => scrollToSection("projects")}>Works</Link>
-                        <Link to="/#contact" onClick={() => scrollToSection("contact")}>Contact</Link>
+                        <Link to="/#" onClick={() => scrollToSection("hero")} className={styles.dropLink}>Home</Link>
+                        <Link to="/#about" onClick={() => scrollToSection("about")} className={styles.dropLink}>About</Link>
+                        <Link to="/#works" onClick={() => scrollToSection("projects")}className={styles.dropLink}>Works</Link>
+                        <Link to="/#contact" onClick={() => scrollToSection("contact")} className={styles.lastLink}>Contact</Link>
                     </div>
                 )}
             </div>
